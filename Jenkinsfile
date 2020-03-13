@@ -3,7 +3,9 @@ node {
   stage('Execute shell') {
     var = "name"
     sh "echo Hello ${var}"
-    build job: "../test1/master", wait: true
+    if (env.BRANCH_NAME == 'master') {
+    build '../test1/master'
+}
  }
   
 }
