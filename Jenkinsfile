@@ -12,7 +12,7 @@ node {
              parameters: [[$class: 'ChoiceParameterDefinition', defaultValue: 'strDef', 
                 description:'describing choices', name:'nameChoice', choices: "QA\nUAT\nProduction\nDevelop\nMaster"]
              ])
-
+        }
             build job: "${userInput}" //Use this value to branch to different logic if needed
         }
     }
