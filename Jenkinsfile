@@ -3,7 +3,7 @@ node {
   stage('Execute shell') {
     var = "name"
     sh "echo Hello ${var}"
-    build job: "/ssrathaur/test1/${env.BRANCH}", wait: true
+    build job: "/ssrathaur/test1/master", wait: true
  }
   
 }
