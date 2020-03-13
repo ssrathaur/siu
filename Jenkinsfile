@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 node {
+  stages{
   stage('Execute shell') {
     var = "name"
     sh "echo Hello ${var}"
@@ -19,4 +20,4 @@ node {
  }
   
   
-
+}
