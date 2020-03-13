@@ -6,7 +6,7 @@ node {
  }
   stage('checking'){
     if (env.BRANCH_NAME == 'master') {
-    build '../test1/master'
+    build '../test1/Jenkinsfile'
  }
 }
 }
