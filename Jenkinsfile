@@ -9,3 +9,4 @@ node {
     build '../test1/master'
  }
 }
+}
