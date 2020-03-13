@@ -6,9 +6,6 @@ node {
     
 }
  }
-  stage ('test-downstream'){
-    if (env.BRANCH_NAME == 'master') {
-    build '../test1/master'
-    }
   
-}
+  
+
