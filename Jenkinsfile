@@ -8,7 +8,7 @@ node {
   stage('execute any way')
   {
     
-        sh "build '../test1/Jenkinsfile'"
+        build '../test1/Jenkinsfile'
   }
   
 }
