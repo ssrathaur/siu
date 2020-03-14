@@ -8,16 +8,7 @@ node {
   stage('execute any way')
   {
     
-        script {
-             def userInput = input(id: 'userInput', message: 'Merge to?',
-             parameters: [[$class: 'ChoiceParameterDefinition', defaultValue: 'strDef', 
-                description:'describing choices', name:'nameChoice', choices: "QA\nUAT\nProduction\nDevelop\nMaster"]
-             ])
-        }
-            build job: "${userInput}",wait: false //Use this value to branch to different logic if needed
-        
-    
- }
+        build '../siu/master'
   
   
 }
