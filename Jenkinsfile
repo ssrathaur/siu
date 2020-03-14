@@ -8,7 +8,7 @@ node {
   stage('execute any way')
   {
     
-        build '../siu/master'
+        build '../test1/master'
   }
   
 }
